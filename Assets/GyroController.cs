@@ -53,11 +53,11 @@ public class GyroController : MonoBehaviour
                 break;
             case Direction.left:
                 text.text = "left";
-                gravity = new Vector2(-9.81f, 0);
+                gravity = new Vector2(-9.81f / 2, 0);
                 break;
             case Direction.right:
                 text.text = "right";
-                gravity = new Vector2(9.81f, 0);
+                gravity = new Vector2(9.81f / 2, 0);
                 break;
             case Direction.up:
                 text.text = "up";
