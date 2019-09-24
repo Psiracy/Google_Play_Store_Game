@@ -13,8 +13,6 @@ public enum Direction
 
 public class GyroController : MonoBehaviour
 {
-    [SerializeField]
-    Text text;
     Direction direction;
     Vector2 gravity;
     // Start is called before the first frame update
@@ -26,8 +24,6 @@ public class GyroController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = Input.acceleration.y.ToString();
-
         if (Input.acceleration.y < -.1f)
         {
             direction = Direction.down;
@@ -48,19 +44,15 @@ public class GyroController : MonoBehaviour
         switch (direction)
         {
             case Direction.down:
-                text.text = "down";
                 gravity = new Vector2(0, -9.81f);
                 break;
             case Direction.left:
-                text.text = "left";
                 gravity = new Vector2(-9.81f / 2, 0);
                 break;
             case Direction.right:
-                text.text = "right";
                 gravity = new Vector2(9.81f / 2, 0);
                 break;
             case Direction.up:
-                text.text = "up";
                 gravity = new Vector2(0, 9.81f);
                 break;
             default:
