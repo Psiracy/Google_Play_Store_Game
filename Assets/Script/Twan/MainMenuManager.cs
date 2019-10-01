@@ -11,21 +11,34 @@ public class MainMenuManager : MonoBehaviour
 
     private void Start()
     {
-        if (!Directory.Exists("Saves"))
-        {
-            Directory.CreateDirectory("Saves");
-        }
+        //if (!Directory.Exists("Saves"))
+        //{
+        //    Directory.CreateDirectory("Saves");
+        //}
 
-        if (!File.Exists("Saves/Save.grg"))
+        //if (!File.Exists("Saves/Save.grg"))
+        //{
+        //    File.Create("Saves/Save.grg");
+        //    saveData.levelReached = levelReached;
+        //    string json = JsonUtility.ToJson(saveData);
+        //    File.WriteAllText("Saves/Save.grg", json);
+        //}
+        //else
+        //{
+        //    string json = File.ReadAllText("Saves/Save.grg");
+        //    saveData = JsonUtility.FromJson<SaveData>(json);
+        //    levelReached = saveData.levelReached;
+        //}
+
+        if (!PlayerPrefs.HasKey("save"))
         {
-            File.Create("Saves/Save.grg");
             saveData.levelReached = levelReached;
             string json = JsonUtility.ToJson(saveData);
-            File.WriteAllText("Saves/Save.grg", json);
+            PlayerPrefs.SetString("save", json);
         }
         else
         {
-            string json = File.ReadAllText("Saves/Save.grg");
+            string json = PlayerPrefs.GetString("save");
             saveData = JsonUtility.FromJson<SaveData>(json);
             levelReached = saveData.levelReached;
         }

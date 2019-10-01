@@ -34,11 +34,11 @@ public class GyroController : MonoBehaviour
             {
                 direction = Direction.up;
             }
-            if (Input.acceleration.x < -.85f)
+            if (Input.acceleration.x < -.5f)
             {
                 direction = Direction.left;
             }
-            if (Input.acceleration.x > .85f)
+            if (Input.acceleration.x > .5f)
             {
                 direction = Direction.right;
             }
