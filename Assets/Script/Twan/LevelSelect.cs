@@ -11,7 +11,7 @@ public class LevelSelect : MonoBehaviour
     int reachedLevel;
     void Start()
     {
-      reachedLevel =  FindObjectOfType<InformationHolder>().levelReached;
+      reachedLevel =  FindObjectOfType<MainMenuManager>().levelReached;
         if (level > reachedLevel)
         {
             GetComponent<Button>().interactable = false;
