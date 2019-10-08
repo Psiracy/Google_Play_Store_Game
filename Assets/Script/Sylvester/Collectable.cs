@@ -13,8 +13,9 @@ public class Collectable : MonoBehaviour
 
     private void Start()
     {
-        _EndPortal = GameObject.Find("EndPortal");
-        _AudioSource = GameObject.Find("GameManager").GetComponent<AudioSource>();
+        _EndPortal = GameObject.Find("end portal");
+        _AudioSource = GameObject.Find("gamemanager").GetComponent<AudioSource>();
+        _CollectedSound = Resources.Load<AudioClip>("Sound/PickupSound1");
         _SpriteRenderer = GetComponent<SpriteRenderer>();
 
         _EndPortal.GetComponent<SpriteRenderer>().enabled = false;

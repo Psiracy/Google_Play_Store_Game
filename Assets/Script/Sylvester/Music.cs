@@ -13,11 +13,16 @@ public class Music : MonoBehaviour
     {
         DontDestroyOnLoad(transform.gameObject);
         _AudioSource = GetComponent<AudioSource>();
+        _MenuMusic = Resources.Load<AudioClip>("Sound/MenuMusic");
+        _InGameMusic = Resources.Load<AudioClip>("Sound/InGameMusic");
+        _AudioSource.clip = _MenuMusic;
+        PlayMusic();
     }
 
     private void Update()
     {
         _CurrentScene = SceneManager.GetActiveScene();
+        Debug.Log(_CurrentScene.name);
 
         if (_CurrentScene.name == "Main Menu" && _AudioSource.clip.name != "MenuMusic")
         {
