@@ -6,7 +6,8 @@ public class Player : MonoBehaviour
 {
     [SerializeField]
     Animator animator;
-
+    [SerializeField]
+    GameObject idle, falling;
     GyroController gyro;
     Easing easing;
     float timer, duration;
@@ -95,7 +96,8 @@ public class Player : MonoBehaviour
         }
 
         //animation
-        animator.SetBool("IsFalling", IsGrounded(transform.position, -transform.up, .5f, 1 << 9));
+        idle.SetActive(IsGrounded(transform.position, -transform.up, .5f, 1 << 9));
+        falling.SetActive(!IsGrounded(transform.position, -transform.up, .5f, 1 << 9));
     }
 
     public bool IsGrounded(Vector2 playerPos, Vector2 direction, float distance, int groundLayer)
