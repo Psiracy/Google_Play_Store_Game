@@ -6,7 +6,8 @@ public class Player : MonoBehaviour
 {
     [SerializeField]
     Animator animator;
-
+    [SerializeField]
+    GameObject idle, falling;
     GyroController gyro;
     Easing easing;
     float timer, duration;
@@ -94,29 +95,10 @@ public class Player : MonoBehaviour
         {
             isFalling = true;
         }
-        //if (timeToAllowSound > 0)
-        //{
-        //    timeToAllowSound -= Time.deltaTime;
-        //}
-        //if (rigidBody.velocity.y < -3.5f || rigidBody.velocity.y > 3.5f ||
-        //    rigidBody.velocity.x < -3.5f || rigidBody.velocity.x > 3.5f)
-        //{
-        //    isFalling = true;
-        //    hasLanded = false;
-        //}
-        //else
-        //{
-        //    isFalling = false;
-        //}
-
-        //if (!isFalling && !hasLanded && timeToAllowSound < 0)
-        //{
-
-        //    timeToAllowSound = timeToAllowSoundReset;
-        //}
 
         //animation
-        animator.SetBool("IsFalling", IsGrounded(transform.position, -transform.up, .5f, 1 << 9));
+        idle.SetActive(IsGrounded(transform.position, -transform.up, .5f, 1 << 9));
+        falling.SetActive(!IsGrounded(transform.position, -transform.up, .5f, 1 << 9));
     }
 
     public bool IsGrounded(Vector2 playerPos, Vector2 direction, float distance, int groundLayer)
