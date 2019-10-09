@@ -857,14 +857,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481849521}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.6328308, w: 0.77429014}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.7586205, y: 2.7586205, z: 2.7586205}
   m_Children:
   - {fileID: 622899225}
   m_Father: {fileID: 1711676749}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -78.519005}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 2.7586212, y: 1211.0344}
@@ -2159,6 +2159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 1619080765}
   levelSelect: {fileID: 1711676745}
+  animator: {fileID: 481849523}
 --- !u!1 &1711676745
 GameObject:
   m_ObjectHideFlags: 0
