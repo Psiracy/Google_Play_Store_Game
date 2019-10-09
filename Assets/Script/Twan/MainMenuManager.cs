@@ -7,29 +7,12 @@ using System.IO;
 public class MainMenuManager : MonoBehaviour
 {
     SaveData saveData = new SaveData();
-    int levelReached = 1;
+    public int levelReached = 1;
+    [SerializeField]
+    Animator mainMenuAnimtor;
 
     private void Start()
     {
-        //if (!Directory.Exists("Saves"))
-        //{
-        //    Directory.CreateDirectory("Saves");
-        //}
-
-        //if (!File.Exists("Saves/Save.grg"))
-        //{
-        //    File.Create("Saves/Save.grg");
-        //    saveData.levelReached = levelReached;
-        //    string json = JsonUtility.ToJson(saveData);
-        //    File.WriteAllText("Saves/Save.grg", json);
-        //}
-        //else
-        //{
-        //    string json = File.ReadAllText("Saves/Save.grg");
-        //    saveData = JsonUtility.FromJson<SaveData>(json);
-        //    levelReached = saveData.levelReached;
-        //}
-
         if (!PlayerPrefs.HasKey("save"))
         {
             saveData.levelReached = levelReached;
@@ -51,11 +34,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void LevelSelect()
     {
-        GameObject infoHolder = new GameObject();
-        infoHolder.AddComponent<InformationHolder>();
-        infoHolder.GetComponent<InformationHolder>().levelReached = levelReached;
-        DontDestroyOnLoad(infoHolder);
-        SceneManager.LoadScene(1);
+        mainMenuAnimtor.SetTrigger("Transition");
     }
 
     public void Quit()

@@ -10,6 +10,13 @@ public class Player : MonoBehaviour
     float change, target;
     bool isCoroutineRunning = false;
     Direction direction;
+    Rigidbody2D rigidBody;
+    bool isFalling = false;
+    bool hasLanded = false;
+    AudioSource audioSource;
+    AudioClip fallSound;
+    float timeToAllowSound;
+    float timeToAllowSoundReset = 0.5f;
 
     void Start()
     {
@@ -18,6 +25,11 @@ public class Player : MonoBehaviour
         timer = 0;
         direction = Direction.down;
         duration = 1;
+        rigidBody = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
+        fallSound = Resources.Load<AudioClip>("Sound/PlayerFall2,5");
+        audioSource.clip = fallSound;
+        timeToAllowSound = timeToAllowSoundReset;
     }
 
     void Update()
@@ -64,5 +76,30 @@ public class Player : MonoBehaviour
         //easing
         float z = easing.Ease(transform.eulerAngles.z, change, duration, EaseCurve.Bounce, EaseType.Out, timer);
         transform.eulerAngles = new Vector3(0, 0, z);
+
+        //landing sound
+        if (timeToAllowSound > 0)
+        {
+            timeToAllowSound -= Time.deltaTime;
+        }
+        Debug.Log(timeToAllowSound);
+
+        if (rigidBody.velocity.y < -3.5f || rigidBody.velocity.y > 3.5f ||
+            rigidBody.velocity.x < -3.5f || rigidBody.velocity.x > 3.5f)
+        {
+            isFalling = true;
+            hasLanded = false;
+        }
+        else
+        {
+            isFalling = false;
+        }
+
+        if (!isFalling && !hasLanded && timeToAllowSound < 0)
+        {
+            audioSource.Play();
+            hasLanded = true;
+            timeToAllowSound = timeToAllowSoundReset;
+        }
     }
 }

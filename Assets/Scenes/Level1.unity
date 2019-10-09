@@ -302,6 +302,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grave: {fileID: 6344271244838542862, guid: c07fa45d62cf31e4da59d47b9e715cb7, type: 3}
   gameManager: {fileID: 938276145}
+  portal: {fileID: 0}
+  collectable: {fileID: 0}
 --- !u!61 &409968557
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -455,6 +457,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grave: {fileID: 6344271244838542862, guid: c07fa45d62cf31e4da59d47b9e715cb7, type: 3}
   gameManager: {fileID: 938276145}
+  portal: {fileID: 0}
+  collectable: {fileID: 0}
 --- !u!61 &441895438
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -527,6 +531,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grave: {fileID: 6344271244838542862, guid: c07fa45d62cf31e4da59d47b9e715cb7, type: 3}
   gameManager: {fileID: 938276145}
+  portal: {fileID: 0}
+  collectable: {fileID: 0}
 --- !u!61 &460509686
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1502,6 +1508,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grave: {fileID: 6344271244838542862, guid: c07fa45d62cf31e4da59d47b9e715cb7, type: 3}
   gameManager: {fileID: 938276145}
+  portal: {fileID: 0}
+  collectable: {fileID: 0}
 --- !u!61 &1013625471
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6751,6 +6759,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grave: {fileID: 6344271244838542862, guid: c07fa45d62cf31e4da59d47b9e715cb7, type: 3}
   gameManager: {fileID: 938276145}
+  portal: {fileID: 0}
+  collectable: {fileID: 0}
 --- !u!61 &1209623930
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6904,6 +6914,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grave: {fileID: 6344271244838542862, guid: c07fa45d62cf31e4da59d47b9e715cb7, type: 3}
   gameManager: {fileID: 938276145}
+  portal: {fileID: 0}
+  collectable: {fileID: 0}
 --- !u!61 &1254543413
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7116,6 +7128,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grave: {fileID: 6344271244838542862, guid: c07fa45d62cf31e4da59d47b9e715cb7, type: 3}
   gameManager: {fileID: 938276145}
+  portal: {fileID: 0}
+  collectable: {fileID: 0}
 --- !u!61 &1330717816
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7302,6 +7316,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grave: {fileID: 6344271244838542862, guid: c07fa45d62cf31e4da59d47b9e715cb7, type: 3}
   gameManager: {fileID: 938276145}
+  portal: {fileID: 0}
+  collectable: {fileID: 0}
 --- !u!61 &1534278782
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7374,6 +7390,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grave: {fileID: 6344271244838542862, guid: c07fa45d62cf31e4da59d47b9e715cb7, type: 3}
   gameManager: {fileID: 938276145}
+  portal: {fileID: 0}
+  collectable: {fileID: 0}
 --- !u!61 &1619014484
 BoxCollider2D:
   m_ObjectHideFlags: 0

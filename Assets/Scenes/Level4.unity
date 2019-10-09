@@ -272,6 +272,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grave: {fileID: 6344271244838542862, guid: c07fa45d62cf31e4da59d47b9e715cb7, type: 3}
   gameManager: {fileID: 473429988}
+  portal: {fileID: 0}
+  collectable: {fileID: 0}
 --- !u!61 &206391618
 BoxCollider2D:
   m_ObjectHideFlags: 0
