@@ -6,7 +6,6 @@ public class MainMenuLevelTrans : MonoBehaviour
 {
     [SerializeField]
     GameObject mainMenu, levelSelect;
-
     private void Start()
     {
         levelSelect.SetActive(false);
