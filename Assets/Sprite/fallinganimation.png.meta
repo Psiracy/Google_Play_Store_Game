@@ -1,0 +1,832 @@
+fileFormatVersion: 2
+guid: 99e34c41744774d4b8616514483228ae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2120446524030722353
+    second: fallinganimation_0
+  - first:
+      213: -662004393617829925
+    second: fallinganimation_1
+  - first:
+      213: 8832540945252332045
+    second: fallinganimation_2
+  - first:
+      213: -5885576368045613291
+    second: fallinganimation_3
+  - first:
+      213: -4246458468015183078
+    second: fallinganimation_4
+  - first:
+      213: 7015515667685289083
+    second: fallinganimation_5
+  - first:
+      213: -598359962669322619
+    second: fallinganimation_6
+  - first:
+      213: 8110179274722286984
+    second: fallinganimation_7
+  - first:
+      213: -2272611054419326721
+    second: fallinganimation_8
+  - first:
+      213: 2674188168067112727
+    second: fallinganimation_9
+  - first:
+      213: -5791245806630540196
+    second: fallinganimation_10
+  - first:
+      213: 9058762512649484676
+    second: fallinganimation_11
+  - first:
+      213: -1516575015538939615
+    second: fallinganimation_12
+  - first:
+      213: 3220251824327626674
+    second: fallinganimation_13
+  - first:
+      213: -1055712622587241854
+    second: fallinganimation_14
+  - first:
+      213: -1417800280491083456
+    second: fallinganimation_15
+  - first:
+      213: 4011797398907849394
+    second: fallinganimation_16
+  - first:
+      213: -7123519549113607196
+    second: fallinganimation_17
+  - first:
+      213: -6568497329835500739
+    second: fallinganimation_18
+  - first:
+      213: -2935356459364269193
+    second: fallinganimation_19
+  - first:
+      213: -1576553928369568978
+    second: fallinganimation_20
+  - first:
+      213: 5485820220398042270
+    second: fallinganimation_21
+  - first:
+      213: 5889377624163249587
+    second: fallinganimation_22
+  - first:
+      213: 2641804955877962286
+    second: fallinganimation_23
+  - first:
+      213: -903130329060814677
+    second: fallinganimation_24
+  - first:
+      213: -870216598825753048
+    second: fallinganimation_25
+  - first:
+      213: 6645199904632529098
+    second: fallinganimation_26
+  - first:
+      213: 47970115657681076
+    second: fallinganimation_27
+  - first:
+      213: -4098833123877225593
+    second: fallinganimation_28
+  - first:
+      213: -4806382598624505790
+    second: fallinganimation_29
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fallinganimation_0
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 993
+        width: 201
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a141af6f89cb2ae4e82175a17362b882
+      internalID: 2120446524030722353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_1
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 993
+        width: 201
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3142bbb6e414e604bb7c477f5eb042ab
+      internalID: -662004393617829925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_2
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 993
+        width: 200
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b2e0cd2a38b4d48b9df83b08bdc8ea
+      internalID: 8832540945252332045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_3
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 993
+        width: 200
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d953b0062df4254f88ab4b396066e7a
+      internalID: -5885576368045613291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_4
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 993
+        width: 202
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0956be79f8fd3a642a92f708093d6acd
+      internalID: -4246458468015183078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_5
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 993
+        width: 202
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526fe1f10dde88a488da19ffe0e016f8
+      internalID: 7015515667685289083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_6
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 670
+        width: 202
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479b8036d6a7aa942b78e1cce04b6a99
+      internalID: -598359962669322619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_7
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 670
+        width: 204
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e450c0560633d3b4e8c04c872e10c8de
+      internalID: 8110179274722286984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_8
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 670
+        width: 202
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d4e7f1977430c429d7ef123792bd11
+      internalID: -2272611054419326721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_9
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 670
+        width: 202
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb4b26fc7b45e84c99423f342b79441
+      internalID: 2674188168067112727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_10
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 670
+        width: 203
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c790523872e2ed946a7465b06ccf0ce9
+      internalID: -5791245806630540196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_11
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 670
+        width: 203
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0af12726800df4aaefcf511022605a
+      internalID: 9058762512649484676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_12
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 670
+        width: 202
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98fcf15ad1b877e419f4c83ebdb25824
+      internalID: -1516575015538939615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_13
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 670
+        width: 202
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe95e4637bb8e87458b164a9d3141d49
+      internalID: 3220251824327626674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_14
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 348
+        width: 201
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3db5f0a5d0e364190560e456621ac6
+      internalID: -1055712622587241854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_15
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 348
+        width: 202
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b14ca84dd520e344a604a865c719ddf
+      internalID: -1417800280491083456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_16
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 348
+        width: 201
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae62a17f66c8e5143bbfdea42c97c2a8
+      internalID: 4011797398907849394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_17
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 348
+        width: 200
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8a0a5f8aff2d449abede90bc2e6c5e
+      internalID: -7123519549113607196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_18
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 348
+        width: 201
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60a555d37d253343abdb7e46d8b058f
+      internalID: -6568497329835500739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_19
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 348
+        width: 199
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f7e19ec368d204c80a9feae8d8c021
+      internalID: -2935356459364269193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_20
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 348
+        width: 200
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4dd980c489e1f499033f1545b945d8
+      internalID: -1576553928369568978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_21
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 348
+        width: 198
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c4f3a588d1dfa44b805018061c8cd2
+      internalID: 5485820220398042270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_22
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 27
+        width: 198
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d68a87ac395d614a8470df62da96e34
+      internalID: 5889377624163249587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_23
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 27
+        width: 198
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ac3029fa27ba043a504d11fa826740
+      internalID: 2641804955877962286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_24
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 27
+        width: 198
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adfa16c68c2f0e34f90aba23a2a72bf4
+      internalID: -903130329060814677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_25
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 27
+        width: 198
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3927c5bc29b4842a5110eeb2a58b4e
+      internalID: -870216598825753048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_26
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 27
+        width: 199
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274b12251ae4f054abd51e7bb030a6c5
+      internalID: 6645199904632529098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_27
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 27
+        width: 199
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559aaa14bca07404fa5cd52a705ffc00
+      internalID: 47970115657681076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_28
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 27
+        width: 200
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e45031d5bbecea4eb51f087dcc69db0
+      internalID: -4098833123877225593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallinganimation_29
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 27
+        width: 199
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a31f54db151b34a8f2c54f4193bb46
+      internalID: -4806382598624505790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d38c815d8fe8fe14dbd6ed60ace4d006
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

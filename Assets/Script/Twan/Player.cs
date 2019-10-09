@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField]
+    Animator animator;
+
     GyroController gyro;
     Easing easing;
     float timer, duration;
@@ -77,29 +80,53 @@ public class Player : MonoBehaviour
         float z = easing.Ease(transform.eulerAngles.z, change, duration, EaseCurve.Bounce, EaseType.Out, timer);
         transform.eulerAngles = new Vector3(0, 0, z);
 
-        //landing sound
-        if (timeToAllowSound > 0)
+        //check for ground
+        if (IsGrounded(transform.position, -transform.up, .5f, 1 << 9) == true)
         {
-            timeToAllowSound -= Time.deltaTime;
-        }
-        Debug.Log(timeToAllowSound);
-
-        if (rigidBody.velocity.y < -3.5f || rigidBody.velocity.y > 3.5f ||
-            rigidBody.velocity.x < -3.5f || rigidBody.velocity.x > 3.5f)
-        {
-            isFalling = true;
-            hasLanded = false;
+            hasLanded = true;
+            if (isFalling == true)
+            {
+                audioSource.Play();
+                isFalling = false;
+            }
         }
         else
         {
-            isFalling = false;
+            isFalling = true;
+        }
+        //if (timeToAllowSound > 0)
+        //{
+        //    timeToAllowSound -= Time.deltaTime;
+        //}
+        //if (rigidBody.velocity.y < -3.5f || rigidBody.velocity.y > 3.5f ||
+        //    rigidBody.velocity.x < -3.5f || rigidBody.velocity.x > 3.5f)
+        //{
+        //    isFalling = true;
+        //    hasLanded = false;
+        //}
+        //else
+        //{
+        //    isFalling = false;
+        //}
+
+        //if (!isFalling && !hasLanded && timeToAllowSound < 0)
+        //{
+
+        //    timeToAllowSound = timeToAllowSoundReset;
+        //}
+
+        //animation
+        animator.SetBool("IsFalling", IsGrounded(transform.position, -transform.up, .5f, 1 << 9));
+    }
+
+    public bool IsGrounded(Vector2 playerPos, Vector2 direction, float distance, int groundLayer)
+    {
+        RaycastHit2D hit = Physics2D.Raycast(playerPos, direction, distance, groundLayer);
+        if (hit.collider != null)
+        {
+            return true;
         }
 
-        if (!isFalling && !hasLanded && timeToAllowSound < 0)
-        {
-            audioSource.Play();
-            hasLanded = true;
-            timeToAllowSound = timeToAllowSoundReset;
-        }
+        return false;
     }
 }
