@@ -270,10 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f01f0a5df014d65419ddc9253122834c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grave: {fileID: 6344271244838542862, guid: c07fa45d62cf31e4da59d47b9e715cb7, type: 3}
-  gameManager: {fileID: 473429988}
-  portal: {fileID: 0}
-  collectable: {fileID: 0}
+  bloodySpike: {fileID: 0}
 --- !u!61 &206391618
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5232,7 +5229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d950136638a30de48967ba66841ba1c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testOnPC: 1
+  testOnPC: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
