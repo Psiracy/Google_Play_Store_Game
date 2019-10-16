@@ -12,7 +12,6 @@ public class Player : MonoBehaviour
     Easing easing;
     float timer, duration;
     float change, target;
-    bool isCoroutineRunning = false;
     Direction direction;
     Rigidbody2D rigidBody;
     bool isFalling = false;
