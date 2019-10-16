@@ -15,7 +15,6 @@ public class Player : MonoBehaviour
     Direction direction;
     Rigidbody2D rigidBody;
     bool isFalling = false;
-    bool hasLanded = false;
     AudioSource audioSource;
     AudioClip fallSound;
     float timeToAllowSound;
@@ -83,14 +82,14 @@ public class Player : MonoBehaviour
         //check for ground
         if (IsGrounded(transform.position, -transform.up, .5f, 1 << 9) == true)
         {
-            hasLanded = true;
             if (isFalling == true)
             {
                 audioSource.Play();
                 isFalling = false;
             }
         }
-        else
+        else if (rigidBody.velocity.y < -3.5f || rigidBody.velocity.y > 3.5f ||
+                 rigidBody.velocity.x < -3.5f || rigidBody.velocity.x > 3.5f)
         {
             isFalling = true;
         }
