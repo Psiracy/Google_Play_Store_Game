@@ -11,7 +11,7 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField]
     private int maxLevel;
     [SerializeField]
-    Animator mainMenuAnimtor;
+    Animator mainMenuAnimator;
 
     private void Start()
     {
@@ -47,7 +47,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void LevelSelect()
     {
-        mainMenuAnimtor.SetTrigger("Transition");
+        mainMenuAnimator.SetTrigger("Transition");
     }
 
     public void EmptySaveFile()
