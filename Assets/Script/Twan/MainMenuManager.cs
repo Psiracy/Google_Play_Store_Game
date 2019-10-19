@@ -7,9 +7,11 @@ using System.IO;
 public class MainMenuManager : MonoBehaviour
 {
     SaveData saveData = new SaveData();
-    public int levelReached = 1;
+    public int levelReached = 0;
     [SerializeField]
-    Animator mainMenuAnimtor;
+    private int maxLevel;
+    [SerializeField]
+    Animator mainMenuAnimator;
 
     private void Start()
     {
@@ -27,14 +29,32 @@ public class MainMenuManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+            EmptySaveFile();
+
+        Debug.Log("Level reached: " + levelReached);
+    }
+
     public void GameStart()
     {
-        SceneManager.LoadScene("Level" + levelReached);
+        if (levelReached < maxLevel)
+            SceneManager.LoadScene("Level" + levelReached);
+        else
+            SceneManager.LoadScene("Level" + maxLevel);
     }
 
     public void LevelSelect()
     {
-        mainMenuAnimtor.SetTrigger("Transition");
+        mainMenuAnimator.SetTrigger("Transition");
+    }
+
+    public void EmptySaveFile()
+    {
+        string json = PlayerPrefs.GetString("save");
+        saveData = JsonUtility.FromJson<SaveData>(json);
+        levelReached = 0;
     }
 
     public void Quit()
