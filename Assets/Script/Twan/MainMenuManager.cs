@@ -52,8 +52,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void EmptySaveFile()
     {
-        string json = PlayerPrefs.GetString("save");
-        saveData = JsonUtility.FromJson<SaveData>(json);
+        PlayerPrefs.DeleteAll();
         levelReached = 0;
     }
 
@@ -66,4 +65,10 @@ public class MainMenuManager : MonoBehaviour
 struct SaveData
 {
     public int levelReached;
+}
+
+struct LevelData
+{
+    public int level;
+    public float time;
 }
