@@ -23,15 +23,25 @@ public class EndPortal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        string json = PlayerPrefs.GetString("save");
-        saveData = JsonUtility.FromJson<SaveData>(json);
-        if (saveData.levelReached < level)
+        if (PlayerPrefs.HasKey("save"))
+        {
+            string json = PlayerPrefs.GetString("save");
+            saveData = JsonUtility.FromJson<SaveData>(json);
+            if (saveData.levelReached < level)
+            {
+                saveData.levelReached = level;
+                json = JsonUtility.ToJson(saveData);
+                PlayerPrefs.SetString("save", json);
+            }
+        }
+        else
         {
             saveData.levelReached = level;
-            json = JsonUtility.ToJson(saveData);
+            string json = JsonUtility.ToJson(saveData);
             PlayerPrefs.SetString("save", json);
         }
 
+        level--;
         levelData.level = level;
         levelData.time = gameManager.levelTimer;
 
