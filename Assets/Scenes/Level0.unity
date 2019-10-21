@@ -5365,7 +5365,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 1217722434129652698, guid: 7263d472adc98ea43828cca11b3a698e,
     type: 3}
+  portal: {fileID: 7412727164062144593, guid: cab1566f140bb22479fb6cb237cc280d, type: 3}
+  deathPortal: {fileID: 7412727164062144593, guid: b5a0123479ebcb547b77a5008203bc12,
+    type: 3}
   startingpos: {fileID: 249728457}
+  currentPlayer: {fileID: 0}
   levelTimer: 0
 --- !u!4 &473429989
 Transform:
@@ -5393,7 +5397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d950136638a30de48967ba66841ba1c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testOnPC: 0
+  testOnPC: 1
 --- !u!82 &473429991
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6269,7 +6273,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &899116485
 GameObject:
@@ -13904,7 +13908,7 @@ PrefabInstance:
     - target: {fileID: 273039569759674436, guid: ea0a933534046c14f9a45f610644befe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 273039569759674436, guid: ea0a933534046c14f9a45f610644befe,
         type: 3}

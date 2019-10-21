@@ -5,10 +5,11 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
-    GameObject playerPrefab;
+    GameObject playerPrefab, portal, deathPortal;
     [SerializeField]
     Transform startingpos;
 
+    public GameObject currentPlayer;
     public float levelTimer;
 
     private void Start()
@@ -18,7 +19,12 @@ public class GameManager : MonoBehaviour
 
     public void SummonPlayer()
     {
-        Instantiate(playerPrefab, startingpos.position, Quaternion.identity);
+        Instantiate(portal, startingpos.position, Quaternion.identity);
+    }
+
+    public void KillPlayer(Vector3 deathPos)
+    {
+        Instantiate(deathPortal, deathPos, Quaternion.identity);
     }
 
     void Update()
