@@ -12,7 +12,7 @@ public class Hazard : MonoBehaviour
 
     private void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = transform.parent.GetComponent<SpriteRenderer>();
         gameManager = FindObjectOfType<GameManager>();
     }
 

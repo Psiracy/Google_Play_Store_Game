@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     Transform startingpos;
 
+    public float levelTimer;
+
     private void Start()
     {
         SummonPlayer();
@@ -16,6 +18,11 @@ public class GameManager : MonoBehaviour
 
     public void SummonPlayer()
     {
-        Instantiate(playerPrefab,startingpos.position, Quaternion.identity);
+        Instantiate(playerPrefab, startingpos.position, Quaternion.identity);
+    }
+
+    void Update()
+    {
+        levelTimer += Time.deltaTime;
     }
 }
