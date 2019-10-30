@@ -12,14 +12,15 @@ public class Hazard : MonoBehaviour
 
     private void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = transform.parent.GetComponent<SpriteRenderer>();
         gameManager = FindObjectOfType<GameManager>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(collision.gameObject);
-        gameManager.SummonPlayer();
+        Destroy(collision.rigidbody);
+        Destroy(collision.transform.GetComponent<Player>());
+        gameManager.KillPlayer(collision.transform.position);
         spriteRenderer.sprite = bloodySpike;
     }
 }
