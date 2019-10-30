@@ -5676,8 +5676,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 82.8, y: 248.5}
-  m_SizeDelta: {x: 87.9, y: 22.05}
+  m_AnchoredPosition: {x: 288.3, y: 752.6}
+  m_SizeDelta: {x: 200, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &558555640
 MonoBehaviour:
@@ -5821,7 +5821,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -6926,11 +6926,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
-    - target: {fileID: 8357387233641664141, guid: 9c97c7438a89d754fbb691f4b45f0400,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: eb90f974354f56f41af8fb2c544e2fa4, type: 2}
     - target: {fileID: 8357387233641664241, guid: 9c97c7438a89d754fbb691f4b45f0400,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7066,6 +7061,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Quit
       objectReference: {fileID: 0}
+    - target: {fileID: 8357387233641664141, guid: 9c97c7438a89d754fbb691f4b45f0400,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: eb90f974354f56f41af8fb2c544e2fa4, type: 2}
     m_RemovedComponents:
     - {fileID: 8357387233641664240, guid: 9c97c7438a89d754fbb691f4b45f0400, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9c97c7438a89d754fbb691f4b45f0400, type: 3}
