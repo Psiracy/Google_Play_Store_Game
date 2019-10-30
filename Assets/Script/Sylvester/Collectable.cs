@@ -13,21 +13,17 @@ public class Collectable : MonoBehaviour
 
     private void Start()
     {
-        _EndPortal = GameObject.Find("end portal");
+        _EndPortal = FindObjectOfType<EndPortal>().gameObject;
         _AudioSource = GameObject.Find("gamemanager").GetComponent<AudioSource>();
         _CollectedSound = Resources.Load<AudioClip>("Sound/PickupSound1");
         _SpriteRenderer = GetComponent<SpriteRenderer>();
 
-        _EndPortal.GetComponent<SpriteRenderer>().enabled = false;
-        _EndPortal.GetComponent<Collider2D>().enabled = false;
-        _EndPortal.GetComponent<ParticleSystem>().Stop();
+        _EndPortal.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        _EndPortal.GetComponent<SpriteRenderer>().enabled = true;
-        _EndPortal.GetComponent<Collider2D>().enabled = true;
-        _EndPortal.GetComponent<ParticleSystem>().Play();
+        _EndPortal.SetActive(true);
         _AudioSource.clip = _CollectedSound;
         _AudioSource.Play();
         _SoundPlayed = true;
