@@ -11,7 +11,9 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField]
     private int maxLevel;
     [SerializeField]
-    Animator mainMenuAnimator;
+    Animator mainMenuAnimator, levelSelectAnimator;
+    [SerializeField]
+    GameObject deleteSave;
 
     private void Start()
     {
@@ -27,6 +29,8 @@ public class MainMenuManager : MonoBehaviour
             saveData = JsonUtility.FromJson<SaveData>(json);
             levelReached = saveData.levelReached;
         }
+
+        deleteSave.SetActive(false);
     }
 
     private void Update()
@@ -50,10 +54,26 @@ public class MainMenuManager : MonoBehaviour
         mainMenuAnimator.SetTrigger("Transition");
     }
 
+    public void MainMenu()
+    {
+        levelSelectAnimator.SetTrigger("Transition");
+    }
+
+    public void OpenDeleteSaveMenu()
+    {
+        deleteSave.SetActive(true);
+    }
+
+    public void CloseDeleteSaveMenu()
+    {
+        deleteSave.SetActive(false);
+    }
+
     public void EmptySaveFile()
     {
         PlayerPrefs.DeleteAll();
         levelReached = 0;
+        deleteSave.SetActive(false);
     }
 
     public void Quit()
