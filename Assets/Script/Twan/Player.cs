@@ -20,8 +20,19 @@ public class Player : MonoBehaviour
     float timeToAllowSound;
     float timeToAllowSoundReset = 0.5f;
 
+    public static Player instance;
+
     void Start()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+
         gyro = FindObjectOfType<GyroController>();
         easing = new Easing();
         timer = 0;
