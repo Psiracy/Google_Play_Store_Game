@@ -5,9 +5,9 @@ using UnityEngine;
 public class Collectable : MonoBehaviour
 {
     [SerializeField] private GameObject _EndPortal;
-    [SerializeField] private AudioSource _AudioSource;
-    [SerializeField] private AudioClip _CollectedSound;
-    [SerializeField] private SpriteRenderer _SpriteRenderer;
+    [SerializeField] private AudioSource _AudioSource;      //Local AudioSource
+    [SerializeField] private AudioClip _CollectedSound;     //Sound prefab for collecting
+    [SerializeField] private SpriteRenderer _SpriteRenderer;//Local SpriteRenderer
     private bool _Collected = false;
     private bool _SoundPlayed = false;
 
@@ -30,8 +30,6 @@ public class Collectable : MonoBehaviour
         _Collected = true;
 
         if (_SoundPlayed)
-        {
             gameObject.SetActive(false);
-        }
     }
 }
