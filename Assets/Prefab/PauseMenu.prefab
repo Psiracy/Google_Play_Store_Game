@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -21, y: 3085}
+  m_AnchoredPosition: {x: -22, y: 3085}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4743414441631559990
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 4743414442623602159}
   - component: {fileID: 4743414442623602158}
   m_Layer: 5
-  m_Name: Start
+  m_Name: Resume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -236,7 +236,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 13377939f265d064395577222f0f3891, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fce953be81beb074d8a32ab2464b27ed, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -273,9 +273,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: bd004b8292aa4064d8c1a6b29deb2015,
+    m_HighlightedSprite: {fileID: 21300000, guid: f743ce3e3457b6b4fb91fd26f61f574e,
       type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 299e00ac6ec179f4faec1c975aef4a14, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: b8309ab65d0926b40908ec5999b4e88a, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
