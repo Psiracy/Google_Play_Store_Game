@@ -19,6 +19,10 @@ public class GyroController : MonoBehaviour
     float gravityIntesity = 11.15f;
     void Start()
     {
+        if (testOnPC == true)
+        {
+            direction = Direction.down;
+        }
         gravity = Physics2D.gravity;
     }
 

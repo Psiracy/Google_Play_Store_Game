@@ -39,7 +39,7 @@ Texture2D:
   m_StreamData:
     offset: 0
     size: 0
-    path: 
+    path:
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: Homunculus SDF
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier:
   hashCode: 1140838524
   material: {fileID: 1421146619233899520}
   materialHashCode: -177524979
@@ -591,9 +591,58 @@ MonoBehaviour:
     m_Height: 81
   m_FreeGlyphRects:
   - m_X: 55
+    m_Y: 928
+    m_Width: 59
+    m_Height: 81
+  - m_X: 92
+    m_Y: 847
+    m_Width: 59
+    m_Height: 81
+  - m_X: 114
+    m_Y: 928
+    m_Width: 59
+    m_Height: 81
+  - m_X: 59
     m_Y: 425
-    m_Width: 968
-    m_Height: 17
+    m_Width: 59
+    m_Height: 81
+  - m_X: 59
+    m_Y: 506
+    m_Width: 61
+    m_Height: 81
+  - m_X: 59
+    m_Y: 587
+    m_Width: 59
+    m_Height: 81
+  - m_X: 114
+    m_Y: 668
+    m_Width: 55
+    m_Height: 81
+  - m_X: 118
+    m_Y: 587
+    m_Width: 59
+    m_Height: 81
+  - m_X: 118
+    m_Y: 749
+    m_Width: 64
+    m_Height: 81
+  - m_X: 169
+    m_Y: 668
+    m_Width: 64
+    m_Height: 81
+  - m_X: 151
+    m_Y: 830
+    m_Width: 55
+    m_Height: 81
+  - m_X: 173
+    m_Y: 911
+    m_Width: 41
+    m_Height: 90
+  - m_X: 118
+    m_Y: 361
+    m_Width: 41
+    m_Height: 90
+  m_FreeGlyphRects:
   - m_X: 55
     m_Y: 81
     m_Width: 9
@@ -602,28 +651,16 @@ MonoBehaviour:
     m_Y: 162
     m_Width: 54
     m_Height: 37
-  - m_X: 119
-    m_Y: 243
-    m_Width: 904
-    m_Height: 780
   - m_X: 118
     m_Y: 243
     m_Width: 905
     m_Height: 37
-  - m_X: 177
-    m_Y: 162
-    m_Width: 846
-    m_Height: 861
-  - m_X: 228
-    m_Y: 81
-    m_Width: 795
-    m_Height: 942
   - m_X: 277
     m_Y: 0
     m_Width: 746
     m_Height: 1023
   - m_X: 0
-    m_Y: 847
+    m_Y: 1009
     m_Width: 1023
     m_Height: 176
   - m_X: 59
@@ -639,7 +676,7 @@ MonoBehaviour:
     m_Width: 935
     m_Height: 324
   m_fontInfo:
-    Name: 
+    Name:
     PointSize: 0
     Scale: 0
     CharacterCount: 0
@@ -672,7 +709,7 @@ MonoBehaviour:
     m_GlyphPairAdjustmentRecords: []
   m_FallbackFontAssetTable: []
   m_CreationSettings:
-    sourceFontFileName: 
+    sourceFontFileName:
     sourceFontFileGUID: 81c0a53bd07337949a9a21b4212d3d6f
     pointSizeSamplingMode: 0
     pointSize: 90
@@ -681,9 +718,9 @@ MonoBehaviour:
     atlasWidth: 1024
     atlasHeight: 1024
     characterSetSelectionMode: 6
-    characterSequence: 
+    characterSequence:
     referencedFontAssetGUID: 3e6679fd1b7b86843aa9ed60bdbfea76
-    referencedTextAssetGUID: 
+    referencedTextAssetGUID:
     fontStyle: 0
     fontStyleModifier: 0
     renderMode: 4165
@@ -725,7 +762,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Homunculus Atlas Material
   m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
