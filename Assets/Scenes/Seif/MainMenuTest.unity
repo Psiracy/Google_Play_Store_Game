@@ -458,16 +458,6 @@ PrefabInstance:
       propertyPath: levelSelect
       value: 
       objectReference: {fileID: 1711676745}
-    - target: {fileID: 8357387232356932395, guid: 9c97c7438a89d754fbb691f4b45f0400,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 644589400}
-    - target: {fileID: 8357387232356932395, guid: 9c97c7438a89d754fbb691f4b45f0400,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GameStart
-      objectReference: {fileID: 0}
     - target: {fileID: 8357387232734677502, guid: 9c97c7438a89d754fbb691f4b45f0400,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -487,6 +477,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Quit
+      objectReference: {fileID: 0}
+    - target: {fileID: 6791704833018674524, guid: 9c97c7438a89d754fbb691f4b45f0400,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 644589400}
+    - target: {fileID: 6791704833018674524, guid: 9c97c7438a89d754fbb691f4b45f0400,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GameStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 8357387232356932395, guid: 9c97c7438a89d754fbb691f4b45f0400,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 644589400}
+    - target: {fileID: 8357387232356932395, guid: 9c97c7438a89d754fbb691f4b45f0400,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GameStart
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c97c7438a89d754fbb691f4b45f0400, type: 3}
@@ -819,12 +829,12 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1129,7 +1139,7 @@ RectTransform:
   m_GameObject: {fileID: 1478731636}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.24430978, y: 0.24430978, z: 0.24430978}
+  m_LocalScale: {x: 0.62843806, y: 0.62843806, z: 0.62843806}
   m_Children:
   - {fileID: 1694679721}
   - {fileID: 2045237981}

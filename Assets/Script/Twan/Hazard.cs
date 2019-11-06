@@ -18,9 +18,12 @@ public class Hazard : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(collision.rigidbody);
-        Destroy(collision.transform.GetComponent<Player>());
-        gameManager.KillPlayer(collision.transform.position);
-        spriteRenderer.sprite = bloodySpike;
+        if (collision.gameObject.GetComponent<Player>() != null)
+        {
+            Destroy(collision.rigidbody);
+            Destroy(collision.transform.GetComponent<Player>());
+            gameManager.KillPlayer(collision.transform.position);
+            spriteRenderer.sprite = bloodySpike;
+        }
     }
 }
