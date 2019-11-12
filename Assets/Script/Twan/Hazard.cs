@@ -21,7 +21,6 @@ public class Hazard : MonoBehaviour
         if (collision.gameObject.GetComponent<Player>() != null)
         {
             Destroy(collision.rigidbody);
-            Destroy(collision.transform.GetComponent<Player>());
             gameManager.KillPlayer(collision.transform.position);
             spriteRenderer.sprite = bloodySpike;
         }

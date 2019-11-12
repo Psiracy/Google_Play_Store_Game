@@ -3332,12 +3332,12 @@ PrefabInstance:
     - target: {fileID: 2817638295948594873, guid: f47d71a58902582479da3bcf7a910a76,
         type: 3}
       propertyPath: sceneName
-      value: Level1
+      value: Level8
       objectReference: {fileID: 0}
     - target: {fileID: 2817638295948594873, guid: f47d71a58902582479da3bcf7a910a76,
         type: 3}
       propertyPath: level
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f47d71a58902582479da3bcf7a910a76, type: 3}
