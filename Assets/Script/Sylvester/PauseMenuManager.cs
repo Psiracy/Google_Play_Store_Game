@@ -24,7 +24,7 @@ public class PauseMenuManager : MonoBehaviour
 
     public void BackToMainMenu()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("MainMenuTest");
     }
 
     public void Quit()

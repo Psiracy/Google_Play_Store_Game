@@ -9,8 +9,20 @@ public class Music : MonoBehaviour
     [SerializeField] private AudioClip _MenuMusic;
     [SerializeField] private AudioClip _InGameMusic;
     private Scene _CurrentScene;
+
+    public static Music instance;
+
     private void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+
         DontDestroyOnLoad(transform.gameObject);
         _AudioSource = GetComponent<AudioSource>();
         _MenuMusic = Resources.Load<AudioClip>("Sound/MenuMusic");
@@ -24,17 +36,12 @@ public class Music : MonoBehaviour
         _CurrentScene = SceneManager.GetActiveScene();
         Debug.Log(_CurrentScene.name);
 
-        if (_CurrentScene.name == "Main Menu" && _AudioSource.clip.name != "MenuMusic")
+        if (_CurrentScene.name == "MainMenuTest" && _AudioSource.clip.name != "MenuMusic")
         {
             _AudioSource.clip = _MenuMusic;
             PlayMusic();
         }
-        else if (_CurrentScene.name == "LevelSelect(Test)" && _AudioSource.clip.name != "MenuMusic")
-        {
-            _AudioSource.clip = _MenuMusic;
-            PlayMusic();
-        }
-        else if (_CurrentScene.name == "Level1" || _CurrentScene.name == "Level2" || _CurrentScene.name == "Level3" || _CurrentScene.name == "Level4")
+        else if (_CurrentScene.name == "Level0" || _CurrentScene.name == "Level1" || _CurrentScene.name == "Level2" || _CurrentScene.name == "Level3" || _CurrentScene.name == "Level4")
         {
             if (_AudioSource.clip.name != "InGameMusic")
             {
