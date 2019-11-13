@@ -32,4 +32,10 @@ public class Collectable : MonoBehaviour
         if (_SoundPlayed)
             gameObject.SetActive(false);
     }
+
+    public void ResetCollectable()
+    {
+        gameObject.SetActive(true);
+        _EndPortal.SetActive(false);
+    }
 }

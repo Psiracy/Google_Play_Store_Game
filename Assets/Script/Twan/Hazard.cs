@@ -9,6 +9,7 @@ public class Hazard : MonoBehaviour
     Sprite bloodySpike;
 
     SpriteRenderer spriteRenderer;
+    Collectable collectable;
 
     private void Start()
     {
@@ -23,6 +24,11 @@ public class Hazard : MonoBehaviour
             Destroy(collision.rigidbody);
             gameManager.KillPlayer(collision.transform.position);
             spriteRenderer.sprite = bloodySpike;
+
+            if (collectable == null)
+                collectable = Object.FindObjectOfType<Collectable>();
+
+            collectable.ResetCollectable();
         }
     }
 }
