@@ -9,8 +9,20 @@ public class Music : MonoBehaviour
     [SerializeField] private AudioClip _MenuMusic;
     [SerializeField] private AudioClip _InGameMusic;
     private Scene _CurrentScene;
+
+    public static Music instance;
+
     private void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+
         DontDestroyOnLoad(transform.gameObject);
         _AudioSource = GetComponent<AudioSource>();
         _MenuMusic = Resources.Load<AudioClip>("Sound/MenuMusic");

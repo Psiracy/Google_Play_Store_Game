@@ -7,7 +7,7 @@ using System.IO;
 public class MainMenuManager : MonoBehaviour
 {
     SaveData saveData = new SaveData();
-    public int levelReached = 0;
+    public int levelReached = 1;
     [SerializeField]
     private int maxLevel;
     [SerializeField]
@@ -31,14 +31,6 @@ public class MainMenuManager : MonoBehaviour
         }
 
         deleteSave.SetActive(false);
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.R))
-            EmptySaveFile();
-
-        Debug.Log("Level reached: " + levelReached);
     }
 
     public void GameStart()
@@ -72,8 +64,9 @@ public class MainMenuManager : MonoBehaviour
     public void EmptySaveFile()
     {
         PlayerPrefs.DeleteAll();
-        levelReached = 0;
+        levelReached = 1;
         deleteSave.SetActive(false);
+        SceneManager.LoadScene(0);
     }
 
     public void Quit()

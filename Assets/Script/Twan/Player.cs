@@ -30,7 +30,8 @@ public class Player : MonoBehaviour
         }
         else if (instance != this)
         {
-            Destroy(gameObject);
+            Destroy(instance.gameObject);
+            instance = this;
         }
 
         gyro = FindObjectOfType<GyroController>();
